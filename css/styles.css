@@ -270,3 +270,36 @@ a {
     margin: 0 -10px 0 15px;
   }
 }
+
+.speakers {
+  margin-top: 30px;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+}
+
+.summit-speakers {
+  text-align: center;
+  position: relative;
+}
+
+.speaker-title {
+  font-family: var(--font2);
+  color: var(--text-color1);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.speaker-title::after {
+  content: '';
+  left: 150px;
+  right: 0;
+  bottom: 0;
+  top: 50px;
+  width: 60px;
+  height: 1px;
+  position: absolute;
+  background-color: #ef513c;
+}
+
+
