@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* fonts */
+  --font1: 'Nanum Gothic', sans-serif;
+  --font2: 'Lato', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +25,7 @@ a {
 .sectionA {
   background: url(../images2/main_big.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 100%;
   background-size: cover;
 }
 
@@ -41,7 +47,7 @@ a {
 .topNav-icons li a {
   margin: 0 10px;
   text-decoration: none;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: var(--font1);
   color: #fff;
   font-size: 13px;
   line-height: 22px;
@@ -88,7 +94,7 @@ a {
 .rightLinks li a {
   color: #888888;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font2);
   font-weight: 600;
 }
 
@@ -104,4 +110,32 @@ a {
 .rightLinks li#campaign a {
   padding: 5px;
   color: #ef513c;
+}
+
+/* intro section */
+
+.introSection {
+  padding: 30px 20px 0 20px;
+}
+
+.mobile_menu img {
+  width: 20px;
+}
+
+.event img {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.description-container {
+  border: 2px solid #fff;
+}
+
+.description {
+  font-family: var(--font2);
+  font-weight: 600;
+  font-style: 16px;
+  line-height: 24px;
+  box-shadow: 0 10px #fff;
+  padding: 20px 20px;
 }
