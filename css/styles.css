@@ -8,22 +8,34 @@ html {
   scroll-behavior: smooth;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sectionA {
+  background: url(../images2/main_big.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 /* nav bar */
 
 .topNav {
+  display: none;
   background-color: #3e3e3e;
   height: 6vh;
-  padding: 7px 150px 3px 0;
+  padding: 7px 175px 3px 0;
 }
 
 .topNav-icons {
   display: flex;
   align-items: center;
   float: right;
-}
-
-.topNav-icons li {
-  list-style: none;
 }
 
 .topNav-icons li a {
@@ -46,3 +58,50 @@ html {
 
 /* down-nav */
 
+.downNav {
+  display: none;
+  background-color: #fff;
+  height: 10vh;
+  padding: 10px 150px 10px 30px;
+  box-shadow: 0 0 10px 0 #3e3e3e8f;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middleLink {
+  display: none;
+}
+
+.rightLinks {
+  display: none;
+  align-items: center;
+}
+
+.rightLinks li {
+  margin: 0 30px;
+}
+
+.rightLinks li a {
+  color: #888888;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+.rightLinks li#about a {
+  color: #ef513c;
+}
+
+.rightLinks li#campaign {
+  border: 5px solid #ef513c;
+  padding: 10px 5px;
+}
+
+.rightLinks li#campaign a {
+  padding: 5px;
+  color: #ef513c;
+}
