@@ -8,6 +8,9 @@
   /* fonts */
   --font1: 'Nanum Gothic', sans-serif;
   --font2: 'Lato', sans-serif;
+
+  /* colours */
+  --text-color1: #3e3e3e;
 }
 
 html {
@@ -115,7 +118,7 @@ a {
 /* intro section */
 
 .introSection {
-  padding: 30px 20px 0 20px;
+  padding: 30px 20px 50px 20px;
 }
 
 .mobile_menu img {
@@ -128,14 +131,33 @@ a {
 }
 
 .description-container {
-  border: 2px solid #fff;
+  border: 5px solid #fff;
+  background-color: #f4f4f4;
+  margin-top: 80px;
 }
 
 .description {
   font-family: var(--font2);
-  font-weight: 600;
-  font-style: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 16px;
   line-height: 24px;
-  box-shadow: 0 10px #fff;
+  color: var(--text-color1);
   padding: 20px 20px;
+}
+
+.time {
+  color: var(--text-color1);
+  font-family: 'Wendy One', sans-serif;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.venue {
+  color: var(--text-color1);
+  font-family: var(--font2);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
 }
