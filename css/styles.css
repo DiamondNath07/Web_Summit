@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* nav bar */
+
+.topNav {
+  background-color: #3e3e3e;
+  height: 6vh;
+  padding: 7px 150px 3px 0;
+}
+
+.topNav-icons {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.topNav-icons li {
+  list-style: none;
+}
+
+.topNav-icons li a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #fff;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.topNav-icons li a img {
+  margin-top: 4px;
+}
+
+.topNav-icons li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* down-nav */
+
