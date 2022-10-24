@@ -302,4 +302,22 @@ a {
   background-color: #ef513c;
 }
 
+.speakers-container {
+ margin-top: 60px;
+  display: grid;
+}
 
+.speaker1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 20px;
+}
+
+.speaker-pic {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.speaker-desc {
+  grid-column: span 4;
+}
