@@ -119,6 +119,7 @@ a {
 
 .introSection {
   padding: 30px 20px 50px 20px;
+  overflow-x: hidden;
 }
 
 .mobile_menu img {
@@ -127,7 +128,7 @@ a {
 
 .event img {
   margin-top: 80px;
-  width: 100%;
+  width: 300px;
 }
 
 .description-container {
@@ -170,6 +171,7 @@ a {
   background-color: #2b2a2a;
   opacity: 1;
   padding: 30px 20px 40px 20px;
+  overflow-x: hidden;
 }
 
 .heading {
@@ -196,6 +198,9 @@ a {
   height: 1px;
   background: #ef513c;
 }
+.schedule-container {
+  display: grid;
+}
 
 .schedule1 {
   margin: 10px 0 0 0;
@@ -221,7 +226,7 @@ a {
 }
 
 .activity-description {
-  font-family: #f4f4f4;
+  font-family: var(--font2);
   color: #fff;
   font-size: 16px;
   line-height: 22px;
@@ -269,6 +274,10 @@ a {
     left: 100%;
     margin: 0 -10px 0 15px;
   }
+}
+
+.more-info {
+  display: none;
 }
 
 .speakers {
@@ -400,12 +409,17 @@ a {
 @media screen and (min-width: 768px) {
   /* section A */
 
+  .navbar {
+    position: relative;
+  }
+
   .topNav {
     display: block;
   }
 
   .downNav {
     display: flex;
+    position: absolute;
   }
 
   .middleLink li img {
@@ -445,5 +459,67 @@ a {
   .venue {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  /* section B */
+
+  .programe-schedule {
+    padding: 80px 20px 100px 20px;
+  }
+
+  .heading-text::after {
+    left: 630px;
+  }
+
+  .schedule-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+
+  .schedule1 {
+    display: grid;
+    grid-template-columns: 200px;
+    align-items: center;
+    margin-right: 0;
+    text-align: center;
+    padding: 20px 10px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .schedule1 img {
+    margin: 0px 0 10px 80px;
+    padding: 0;
+  }
+
+  .activity {
+    grid-row-start: 2;
+    margin-bottom: 10px;
+  }
+
+  .schedule1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px #f4f4f4;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  .more-info {
+    display: block;
+    color: #fff;
+    margin-top: 60px;
+    font-family: var(--font2);
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+  }
+
+  .more-info:hover {
+    cursor: pointer;
+    color: #ef513c;
   }
 }
