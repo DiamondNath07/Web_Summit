@@ -262,9 +262,57 @@ a {
 .gallery-container {
   display: grid;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .gallery-pic {
   width: 100%;
+}
+
+.top-footer {
+  padding: 30px;
+  text-align: center;
+  background-color: #3e3e3e;
+}
+
+.footer-title {
+  position: relative;
+  margin: 20px 0;
+}
+
+.partner-list {
+  font-family: var(--font2);
+  color: #f4f4f4;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.partner-list::after {
+  content: '';
+  left: 150px;
+  right: 0;
+  bottom: 0;
+  top: 50px;
+  width: 60px;
+  height: 1px;
+  position: absolute;
+  background-color: #ef513c;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+}
+
+.sponsor1 {
+  width: 100%;
+}
+
+.img1 {
+  grid-column: span 2;
+}
+
+.img2 {
+  grid-column: span 3;
 }
