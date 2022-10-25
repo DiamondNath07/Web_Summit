@@ -29,7 +29,7 @@ a {
 .sectionA {
   background: url(../images2/main_big.png);
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 70% 100%;
   background-size: cover;
 }
 
@@ -118,3 +118,52 @@ a {
 
 /* intro section */
 
+.introSection {
+  padding: 30px 20px 50px 20px;
+}
+
+.mobile_menu img {
+  width: 20px;
+}
+
+.event img {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.about-info {
+  text-align: center;
+}
+
+.description-container {
+  border: 5px solid #fff;
+  background-color: #f4f4f4;
+  margin-top: 80px;
+}
+
+.description {
+  font-family: var(--font2);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color1);
+  padding: 20px 20px;
+}
+
+.contact {
+  color: var(--text-color1);
+  font-family: var(--font2);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.mail-us {
+  color: var(--text-color1);
+  font-family: var(--font2);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 900;
+  text-decoration: underline;
+}
