@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid #f00 !important;
+  opacity: 1 !important; */
 }
 
 :root {
@@ -67,12 +69,17 @@ a {
 
 /* down-nav */
 
+.navbar {
+  position: relative;
+}
+
 .downNav {
   display: none;
   background-color: #fff;
   height: 11vh;
   padding: 10px 150px 20px 30px;
   box-shadow: 0 0 10px 0 #3e3e3e8f;
+  position: fixed;
 }
 
 .navlinks {
@@ -324,6 +331,10 @@ a {
   margin-bottom: 40px;
 }
 
+.see-more {
+  display: none;
+}
+
 .speaker-pic {
   width: 100%;
   grid-column: span 2;
@@ -522,4 +533,25 @@ a {
     cursor: pointer;
     color: #ef513c;
   }
+
+  .speaker-title {
+    margin-bottom: 70px;
+  }
+
+  .speaker-title::after {
+    left: 630px;
+  }
+
+   .see-more {
+    display: grid;
+  }
+
+  .speakers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+ 
 }
