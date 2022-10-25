@@ -381,11 +381,15 @@ a {
 }
 
 .drop-down::after {
-  content: 'v';
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: '\f107';
   left: 90px;
   right: 0;
   bottom: 0;
-  top: 18px;
+  top: 25px;
   position: absolute;
   color: #ef513c;
+  font: var(--fa-font-solid);
 }
