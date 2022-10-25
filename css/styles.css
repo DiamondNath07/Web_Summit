@@ -395,4 +395,55 @@ a {
   font: var(--fa-font-solid);
 }
 
+/* desktop version */
 
+@media screen and (min-width: 768px) {
+  /* section A */
+
+  .topNav {
+    display: block;
+  }
+
+  .downNav {
+    display: flex;
+  }
+
+  .middleLink li img {
+    width: 120px;
+    margin-right: 180px;
+  }
+
+  .rightLinks li a:hover {
+    color: #ef513c;
+  }
+
+  /* intro section */
+
+  .introSection {
+    padding: 50px 100px 100px 100px;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+
+  .event img {
+    width: 700px;
+  }
+
+  .description-container {
+    margin-top: 10px;
+    max-width: 700px;
+  }
+
+  .time {
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .venue {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
