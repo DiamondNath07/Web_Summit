@@ -82,7 +82,7 @@ a {
 }
 
 .middleLink {
- margin-left: 150px;
+  margin-left: 150px;
 }
 
 .rightLinks {
@@ -369,11 +369,12 @@ a {
   height: 200px;
   text-align: center;
   position: relative;
+  text-align: center;
 }
 
 .drop-down {
   border: 1px solid var(--text-color1);
-  padding: 20px 0;
+  padding: 20px;
   font-family: var(--font2);
   font-size: 18px;
   font-weight: 700;
