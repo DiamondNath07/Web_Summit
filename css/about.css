@@ -329,6 +329,7 @@ a {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   column-gap: 20px;
+  align-items: center;
 }
 
 .host-logo {
