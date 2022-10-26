@@ -403,6 +403,11 @@ a {
   display: grid;
 }
 
+.speakers-container2 {
+  margin-top: 60px;
+  display: grid;
+}
+
 .speaker1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -414,6 +419,7 @@ a {
 .see-more {
   display: none;
 }
+
 
 .arrow-up {
   color: #ef513c;
@@ -723,6 +729,13 @@ a {
   }
 
   .speakers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .speakers-container2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;

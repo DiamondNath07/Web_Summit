@@ -52,13 +52,14 @@ dropDown.addEventListener('click', () => {
   speakers.forEach((speaker) => {
     speaker.classList.toggle('show');
   });
+  if (speaker.classList.contains('show')) {
+    dropDown.innerHTML = showMore;
+  } else {
+    dropDown.innerHTML = showLess;
+  }
   homeFooter.forEach((footer) => {
     footer.classList.toggle('open');
-    if (speaker.classList.contains('show')) {
-      dropDown.innerHTML = showMore;
-    } else {
-      dropDown.innerHTML = showLess;
-    }
+    
   });
 });
 
@@ -67,34 +68,6 @@ dropDown.addEventListener('click', () => {
 const speaker = document.querySelector('.speakers-container');
 
 const eventSpeakers = [
-  {
-    img: './image1/pic1.jpg',
-    fullName: 'Diamond Nathaniel',
-    position: 'Software engineer || Frontend developer || Accountant',
-    contributions:
-      'He will be talking about the simplicity yet power weapon of tech and how it impacts us.',
-  },
-  {
-    img: './images2/speaker_03.png',
-    fullName: 'SohYeoung Noh',
-    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    contributions:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
-  },
-  {
-    img: './image1/pic1.jpg',
-    fullName: 'Diamond Nathaniel',
-    position: 'Software engineer || Frontend developer || Accountant',
-    contributions:
-      'He will be talking about the simplicity yet power weapon of tech and how it impacts us.',
-  },
-  {
-    img: './images2/speaker_03.png',
-    fullName: 'SohYeoung Noh',
-    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    contributions:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
-  },
   {
     img: './image1/pic1.jpg',
     fullName: 'Diamond Nathaniel',
@@ -134,3 +107,64 @@ eventSpeakers.forEach(({ img, fullName, position, contributions }) => {
 
   speaker.appendChild(element);
 });
+
+// speakers
+
+const speakerB = document.querySelector('.speakers-container2');
+
+const eventSpeakers2 = [
+  {
+    img: './images2/speaker_01.png',
+    fullName: 'Diamond Nathaniel',
+    position: 'Software engineer || Frontend developer || Accountant',
+    contributions:
+      'He will be talking about the simplicity yet power weapon of tech and how it impacts us.',
+  },
+  {
+    img: './images2/speaker_02.png',
+    fullName: 'SohYeoung Noh',
+    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    contributions:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
+  },
+  {
+    img: './images2/speaker_06.png',
+    fullName: 'SohYeoung Noh',
+    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    contributions:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
+  },
+  {
+    img: './images2/speaker_05.png',
+    fullName: 'SohYeoung Noh',
+    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    contributions:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
+  },
+];
+
+eventSpeakers2.forEach(({ img, fullName, position, contributions }) => {
+  const element = document.createElement('div');
+  const attr = document.createAttribute('class');
+  attr.value = 'the-speakers2';
+  element.setAttributeNode(attr);
+
+  element.innerHTML = `
+    <div class="speaker1 see-more">
+            <img src="${img}" alt="" class="speaker-pic" />
+            <div class="speaker-desc">
+              <h6 class="name">${fullName}</h6>
+              <p class="position">
+                ${position}
+              </p>
+              <p class="contributions">
+                ${contributions}
+              </p>
+            </div>
+          </div>
+ `;
+
+  speakerB.appendChild(element);
+});
+
+
