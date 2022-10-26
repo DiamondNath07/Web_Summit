@@ -166,10 +166,6 @@ a {
   margin: 0 0 10px 20px;
 }
 
-.slide-link a:hover {
-  color: #ef513c;
-}
-
 .show-menu {
   transform: translateX(0%);
 }
@@ -324,6 +320,10 @@ a {
   font-size: 16px;
   font-family: var(--font2);
   font-weight: 600;
+}
+
+.slide-link a:hover {
+  color: #ef513c;
 }
 
 .rightLinks li a:hover {

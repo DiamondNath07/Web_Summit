@@ -8,7 +8,7 @@ menuBar.addEventListener('click', () => {
   navlinks.classList.toggle('show-menu');
 });
 
-closeBtn.addEventListener('click', (e) => {
+closeBtn.addEventListener('click', () => {
   if (navlinks.classList.contains('show-menu')) {
     navlinks.classList.remove('show-menu');
   }
@@ -49,7 +49,7 @@ const showMore = `
 
 const dropDown = document.querySelector('.drop-down');
 dropDown.addEventListener('click', () => {
-  speakers.forEach(function (speaker) {
+  speakers.forEach((speaker) => {
     speaker.classList.toggle('show');
     if (speaker.classList.contains('show')) {
       dropDown.innerHTML = showLess;
