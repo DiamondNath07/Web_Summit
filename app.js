@@ -38,8 +38,13 @@ scrollLinks.forEach((scroll) => {
 
 const speakers = document.querySelectorAll('.see-more');
 // console.log(speakers);
+
+const homeFooter = document.querySelectorAll('.home-footer');
 const showLess = `
 <span>SHOW LESS </span> <span class='arrow-up'>⬆</span>
+`;
+const showMore = `
+<span>SHOW MORE </span> <span class='arrow-down'>⬇</span>
 `;
 
 const dropDown = document.querySelector('.drop-down');
@@ -49,7 +54,10 @@ dropDown.addEventListener('click', () => {
     if (speaker.classList.contains('show')) {
       dropDown.innerHTML = showLess;
     } else {
-      dropDown.innerHTML = ' SHOW MORE ⬇';
+      dropDown.innerHTML = showMore;
     }
+  });
+  homeFooter.forEach((footer) => {
+    footer.classList.toggle('open');
   });
 });
