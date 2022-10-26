@@ -88,7 +88,7 @@ a {
 }
 
 .middleLink {
-  margin-left: 150px;
+  margin-left: 98px;
 }
 
 .rightLinks {
@@ -107,8 +107,12 @@ a {
   font-weight: 600;
 }
 
-.rightLinks li#about a {
+.rightLinks li#home a {
   color: #ef513c;
+}
+
+.rightLinks li#about a {
+  display: none;
 }
 
 .rightLinks li#campaign {
