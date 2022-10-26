@@ -282,6 +282,7 @@ a {
 /* footer */
 
 .top-footer {
+  display: block;
   padding: 30px;
   text-align: center;
   background-color: #3e3e3e;
@@ -353,11 +354,16 @@ a {
 }
 
 .copyright {
+  display: grid;
   color: var(--text-color1);
   font-family: var(--font2);
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.copyright-desktop {
+  display: none;
 }
 
 /* desktop version */
@@ -458,4 +464,34 @@ a {
   }
 
   /* footer */
+
+  .top-footer {
+    display: none;
+  }
+
+  .down-footer {
+    background-color: var(--text-color1);
+    padding: 40px;
+  }
+
+  .host-remark {
+    display: grid;
+    max-width: 1050px;
+    margin: 0 auto;
+    gap: 300px;
+    align-items: center;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .copyright-desktop {
+    display: block;
+    color: #fff;
+    font-family: var(--font2);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
 }
