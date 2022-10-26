@@ -51,14 +51,14 @@ const dropDown = document.querySelector('.drop-down');
 dropDown.addEventListener('click', () => {
   speakers.forEach((speaker) => {
     speaker.classList.toggle('show');
-    if (speaker.classList.contains('show')) {
-      dropDown.innerHTML = showLess;
-    } else {
-      dropDown.innerHTML = showMore;
-    }
   });
   homeFooter.forEach((footer) => {
     footer.classList.toggle('open');
+    if (speaker.classList.contains('show')) {
+      dropDown.innerHTML = showMore;
+    } else {
+      dropDown.innerHTML = showLess;
+    }
   });
 });
 
