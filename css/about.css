@@ -61,15 +61,6 @@ a {
   line-height: 22px;
 }
 
-.topNav-icons li a img {
-  margin-top: 4px;
-}
-
-.topNav-icons li a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 /* down-nav */
 
 .downNav {
@@ -101,10 +92,15 @@ a {
 }
 
 .rightLinks li a {
-  color: #888888;
+  color: #888;
   font-size: 16px;
   font-family: var(--font2);
   font-weight: 600;
+}
+
+.topNav-icons li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .rightLinks li#home a {
@@ -139,6 +135,10 @@ a {
 .event img {
   margin-top: 80px;
   width: 100%;
+}
+
+.topNav-icons li a img {
+  margin-top: 4px;
 }
 
 .about-info {
@@ -182,7 +182,7 @@ a {
 
 .history {
   background-color: #fff;
-  padding: 30px 0px;
+  padding: 30px 0;
 }
 
 .origin {

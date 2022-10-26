@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   /* outline: 1px solid #f00 !important;
   opacity: 1 !important; */
 }
@@ -49,24 +50,6 @@ a {
   float: right;
 }
 
-.topNav-icons li a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-family: var(--font1);
-  color: #fff;
-  font-size: 13px;
-  line-height: 22px;
-}
-
-.topNav-icons li a img {
-  margin-top: 4px;
-}
-
-.topNav-icons li a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 /* down-nav */
 
 .navbar {
@@ -101,25 +84,9 @@ a {
   margin: 0 30px;
 }
 
-.rightLinks li a {
-  color: #888888;
-  font-size: 16px;
-  font-family: var(--font2);
-  font-weight: 600;
-}
-
-.rightLinks li#about a {
-  color: #ef513c;
-}
-
 .rightLinks li#campaign {
   border: 5px solid #ef513c;
   padding: 10px 5px;
-}
-
-.rightLinks li#campaign a {
-  padding: 5px;
-  color: #ef513c;
 }
 
 /* intro section */
@@ -205,6 +172,7 @@ a {
   height: 1px;
   background: #ef513c;
 }
+
 .schedule-container {
   display: grid;
 }
@@ -221,6 +189,10 @@ a {
 .schedule1 img {
   width: 50px;
   margin-right: 10px;
+}
+
+.topNav-icons li a img {
+  margin-top: 4px;
 }
 
 .activity {
@@ -262,6 +234,40 @@ a {
   font-size: 24px;
   line-height: 32px;
   position: relative;
+}
+
+.topNav-icons li a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: var(--font1);
+  color: #fff;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.rightLinks li a {
+  color: #888;
+  font-size: 16px;
+  font-family: var(--font2);
+  font-weight: 600;
+}
+
+.rightLinks li a:hover {
+  color: #ef513c;
+}
+
+.topNav-icons li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rightLinks li#about a {
+  color: #ef513c;
+}
+
+.rightLinks li#campaign a {
+  padding: 5px;
+  color: #ef513c;
 }
 
 .join-btn a::after {
@@ -394,7 +400,6 @@ a {
   height: 200px;
   text-align: center;
   position: relative;
-  text-align: center;
 }
 
 .drop-down {
@@ -436,15 +441,6 @@ a {
   .downNav {
     display: flex;
     position: absolute;
-  }
-
-  .middleLink li img {
-    width: 120px;
-    margin-right: 180px;
-  }
-
-  .rightLinks li a:hover {
-    color: #ef513c;
   }
 
   /* intro section */
@@ -505,8 +501,13 @@ a {
   }
 
   .schedule1 img {
-    margin: 0px 0 10px 80px;
+    margin: 0 0 10px 80px;
     padding: 0;
+  }
+
+  .middleLink li img {
+    width: 120px;
+    margin-right: 180px;
   }
 
   .activity {
