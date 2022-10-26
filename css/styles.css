@@ -420,6 +420,10 @@ a {
   display: none;
 }
 
+.show {
+  display: grid;
+}
+
 
 .arrow-up {
   color: #ef513c;
@@ -431,9 +435,7 @@ a {
   font-size: 30px;
 }
 
-.show {
-  display: grid;
-}
+
 
 .speaker-pic {
   width: 100%;

@@ -51,6 +51,7 @@ const dropDown = document.querySelector('.drop-down');
 dropDown.addEventListener('click', () => {
   speakers.forEach((speaker) => {
     speaker.classList.toggle('show');
+    console.log(speaker);
   });
   if (speaker.classList.contains('show')) {
     dropDown.innerHTML = showMore;
@@ -59,7 +60,6 @@ dropDown.addEventListener('click', () => {
   }
   homeFooter.forEach((footer) => {
     footer.classList.toggle('open');
-    
   });
 });
 
@@ -166,5 +166,3 @@ eventSpeakers2.forEach(({ img, fullName, position, contributions }) => {
 
   speakerB.appendChild(element);
 });
-
-
