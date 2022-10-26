@@ -61,3 +61,76 @@ dropDown.addEventListener('click', () => {
     footer.classList.toggle('open');
   });
 });
+
+// speaker seection
+
+const speaker = document.querySelector('.speakers-container');
+
+const eventSpeakers = [
+  {
+    img: './image1/pic1.jpg',
+    fullName: 'Diamond Nathaniel',
+    position: 'Software engineer || Frontend developer || Accountant',
+    contributions:
+      'He will be talking about the simplicity yet power weapon of tech and how it impacts us.',
+  },
+  {
+    img: './images2/speaker_03.png',
+    fullName: 'SohYeoung Noh',
+    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    contributions:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
+  },
+  {
+    img: './image1/pic1.jpg',
+    fullName: 'Diamond Nathaniel',
+    position: 'Software engineer || Frontend developer || Accountant',
+    contributions:
+      'He will be talking about the simplicity yet power weapon of tech and how it impacts us.',
+  },
+  {
+    img: './images2/speaker_03.png',
+    fullName: 'SohYeoung Noh',
+    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    contributions:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
+  },
+  {
+    img: './image1/pic1.jpg',
+    fullName: 'Diamond Nathaniel',
+    position: 'Software engineer || Frontend developer || Accountant',
+    contributions:
+      'He will be talking about the simplicity yet power weapon of tech and how it impacts us.',
+  },
+  {
+    img: './images2/speaker_03.png',
+    fullName: 'SohYeoung Noh',
+    position: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    contributions:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a ratione laborum?',
+  },
+];
+
+eventSpeakers.forEach(({ img, fullName, position, contributions }) => {
+  const element = document.createElement('div');
+  const attr = document.createAttribute('class');
+  attr.value = 'the-speakers';
+  element.setAttributeNode(attr);
+
+  element.innerHTML = `
+  <div class="speaker1">
+  <img src="${img}" alt="" class="speaker-pic" />
+          <div class="speaker-desc">
+            <h6 class="name">${fullName}</h6>
+            <p class="position">
+              ${position}
+            </p>
+            <p class="contributions">
+              ${contributions}
+            </p>
+          </div>
+          </div>
+ `;
+
+  speaker.appendChild(element);
+});
