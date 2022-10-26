@@ -430,6 +430,10 @@ a {
 @media screen and (min-width: 768px) {
   /* section A */
 
+  body {
+    overflow-x: hidden;
+  }
+
   .navbar {
     position: relative;
   }
