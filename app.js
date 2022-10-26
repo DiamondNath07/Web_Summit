@@ -33,3 +33,23 @@ scrollLinks.forEach((scroll) => {
     });
   });
 });
+
+// drop down interaction
+
+const speakers = document.querySelectorAll('.see-more');
+// console.log(speakers);
+const showLess = `
+<span>SHOW LESS </span> <span class='arrow-up'>⬆</span>
+`;
+
+const dropDown = document.querySelector('.drop-down');
+dropDown.addEventListener('click', () => {
+  speakers.forEach(function (speaker) {
+    speaker.classList.toggle('show');
+    if (speaker.classList.contains('show')) {
+      dropDown.innerHTML = showLess;
+    } else {
+      dropDown.innerHTML = ' SHOW MORE ⬇';
+    }
+  });
+});

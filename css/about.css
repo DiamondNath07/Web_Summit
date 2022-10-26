@@ -138,6 +138,7 @@ a {
 }
 
 .navslide {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -470,6 +471,10 @@ a {
   }
 
   .mobile_menu img {
+    display: none;
+  }
+
+  .navslide{
     display: none;
   }
 
