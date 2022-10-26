@@ -37,6 +37,7 @@
     />
     <title>Web_Summit</title>
   </head>
+
   <body>
     <section class="sectionA">
       <!-- navbar -->
@@ -94,10 +95,16 @@
                 ><i class="fa-light fa-circle-xmark"></i
               ></span>
               <li class="slide-link"><a href="./about.html">About</a></li>
-              <li class="slide-link"><a href="#program">Program</a></li>
-              <li class="slide-link"><a href="#join">Join</a></li>
-              <li class="slide-link"><a href="#sponsor">Sponsor</a></li>
-              <li class="slide-link"><a href="#">CC campaign</a></li>
+              <li class="slide-link scroll-links">
+                <a href="#program">Program</a>
+              </li>
+              <li class="slide-link scroll-links"><a href="#join">Join</a></li>
+              <li class="slide-link scroll-links">
+                <a href="#sponsor">Sponsor</a>
+              </li>
+              <li class="slide-link scroll-links">
+                <a href="#">CC campaign</a>
+              </li>
             </div>
           </ul>
         </div>
@@ -153,7 +160,7 @@
             each topic
           </p>
         </div>
-        <div class="schedule1">
+        <div id="sponsor" class="schedule1">
           <img src="./images2/program_icon_04.png" alt="lecture_Icon" />
           <p class="activity">Workshop</p>
           <p class="activity-description">
@@ -174,13 +181,13 @@
         <button type="button" class="join-btn">
           <a href="#">Join CC global Summit</a>
         </button>
-        <p class="more-info" id="join">SEE THE WHOLE PROGRAMME</p>
+        <p class="more-info">SEE THE WHOLE PROGRAMME</p>
       </div>
     </section>
 
     <!-- section C -->
 
-    <section class="speakers">
+    <section id="join" class="speakers">
       <header class="summit-speakers">
         <h4 class="speaker-title">Featured Speakers</h4>
       </header>
@@ -269,7 +276,7 @@
 
     <!-- section C -->
 
-    <footer id="sponsor" class="top-footer home-footer">
+    <footer class="top-footer home-footer">
       <header class="footer-title">
         <h5 class="partner-list">Partner</h5>
       </header>
