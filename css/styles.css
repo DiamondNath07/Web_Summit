@@ -100,6 +100,79 @@ a {
   width: 20px;
 }
 
+.navslide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.slide-menu-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(62, 62, 62, 0.4);
+  backdrop-filter: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.slide-menu {
+  width: 90vw;
+  height: 100vh;
+  background-color: #3e3e3e;
+}
+
+.close-btn {
+  margin: 20px 20px 0 0;
+}
+
+.close-btn i {
+  color: #f4f4f4;
+  font: var(--fa-font-regular);
+  margin: 20px 20px 0 0;
+  float: right;
+  font-size: 24px;
+  animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.close-btn i:hover {
+  color: #ef513c;
+}
+
+.slide-link {
+  margin: 30px 0 0 30px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.slide-link a {
+  color: #f4f4f4;
+  font-family: var(--font2);
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 0 10px 20px;
+}
+
+.slide-link a:hover {
+  color: #ef513c;
+}
+
+.show-menu {
+  transform: translateX(0%);
+}
+
 .event img {
   margin-top: 80px;
   width: 300px;
