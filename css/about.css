@@ -35,6 +35,10 @@ a {
 
 /* nav bar */
 
+.navbar {
+  position: relative;
+}
+
 .topNav {
   display: none;
   background-color: #3e3e3e;
@@ -74,6 +78,7 @@ a {
   height: 11vh;
   padding: 10px 150px 20px 30px;
   box-shadow: 0 0 10px 0 #3e3e3e8f;
+  position: fixed;
 }
 
 .navlinks {
@@ -123,6 +128,7 @@ a {
 }
 
 .mobile_menu img {
+  display: block;
   width: 20px;
 }
 
@@ -347,4 +353,51 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+}
+
+/* desktop version */
+
+/* section A */
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .topNav {
+    display: block;
+  }
+
+  .downNav {
+    display: flex;
+    position: absolute;
+  }
+
+  /* intro section */
+
+  .introSection {
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .mobile_menu img {
+    display: none;
+  }
+
+  .event img {
+
+  width: 600px;
+}
+
+.about-info {
+max-width: 700px ;
+margin: 0 auto;
+}
+
+.description-container {
+    margin-top: 20px;
+    width: 1000px;
+}
+
 }
