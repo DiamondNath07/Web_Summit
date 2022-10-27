@@ -405,6 +405,11 @@ a {
 
 .speakers-container2 {
   margin-top: 60px;
+  display: none;
+}
+
+.speakers-container2 .show {
+  margin-top: 60px;
   display: grid;
 }
 
@@ -416,14 +421,13 @@ a {
   margin-bottom: 40px;
 }
 
-.see-more {
+.see-more .show {
   display: none;
 }
 
 .show {
   display: grid;
 }
-
 
 .arrow-up {
   color: #ef513c;
@@ -434,8 +438,6 @@ a {
   color: #ef513c;
   font-size: 30px;
 }
-
-
 
 .speaker-pic {
   width: 100%;
@@ -581,19 +583,6 @@ a {
   color: var(--text-color1);
 }
 
-/* .drop-down::after {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  content: '\f107';
-  left: 120px;
-  right: 0;
-  bottom: 0;
-  top: 25px;
-  position: absolute;
-  color: #ef513c;
-  font: var(--fa-font-solid);
-} */
 
 /* desktop version */
 

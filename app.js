@@ -34,35 +34,6 @@ scrollLinks.forEach((scroll) => {
   });
 });
 
-// drop down interaction
-
-const speakers = document.querySelectorAll('.see-more');
-// console.log(speakers);
-
-const homeFooter = document.querySelectorAll('.home-footer');
-const showLess = `
-<span>SHOW LESS </span> <span class='arrow-up'>⬆</span>
-`;
-const showMore = `
-<span>SHOW MORE </span> <span class='arrow-down'>⬇</span>
-`;
-
-const dropDown = document.querySelector('.drop-down');
-dropDown.addEventListener('click', () => {
-  speakers.forEach((speaker) => {
-    speaker.classList.toggle('show');
-    console.log(speaker);
-  });
-  if (speaker.classList.contains('show')) {
-    dropDown.innerHTML = showMore;
-  } else {
-    dropDown.innerHTML = showLess;
-  }
-  homeFooter.forEach((footer) => {
-    footer.classList.toggle('open');
-  });
-});
-
 // speaker seection
 
 const speaker = document.querySelector('.speakers-container');
@@ -165,4 +136,31 @@ eventSpeakers2.forEach(({ img, fullName, position, contributions }) => {
  `;
 
   speakerB.appendChild(element);
+});
+
+// drop down interaction
+
+const specialSpeakers = document.querySelector('.speakers-container2');
+
+const homeFooter = document.querySelectorAll('.home-footer');
+const showLess = `
+<span>SHOW LESS </span> <span class='arrow-up'>⬆</span>
+`;
+const showMore = `
+<span>SHOW MORE </span> <span class='arrow-down'>⬇</span>
+`;
+
+const dropDown = document.querySelector('.drop-down');
+dropDown.addEventListener('click', () => {
+  specialSpeakers.classList.toggle('show')
+  console.log(specialSpeakers);
+  
+  if (specialSpeakers.classList.contains('show')) {
+    dropDown.innerHTML = showMore;
+  } else {
+    dropDown.innerHTML = showLess;
+  }
+  homeFooter.forEach((footer) => {
+    footer.classList.toggle('open');
+  });
 });
