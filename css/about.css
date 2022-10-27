@@ -70,7 +70,7 @@ a {
 }
 
 .middleLink {
-  margin-left: 89px;
+  margin-left: 43px;
 }
 
 .rightLinks {
@@ -203,9 +203,6 @@ a {
   color: #ef513c;
 }
 
-.rightLinks li#about a {
-  display: none;
-}
 
 .show-menu {
   transform: translateX(0%);
