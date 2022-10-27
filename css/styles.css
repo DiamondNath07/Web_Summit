@@ -408,11 +408,6 @@ a {
   display: none;
 }
 
-.speakers-container2 .show {
-  margin-top: 60px;
-  display: grid;
-}
-
 .speaker1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -421,13 +416,18 @@ a {
   margin-bottom: 40px;
 }
 
-.see-more .show {
-  display: none;
-}
-
 .show {
   display: grid;
   margin-top: 0;
+}
+
+.speakers-container2 .show {
+  margin-top: 60px;
+  display: grid;
+}
+
+.see-more .show {
+  display: none;
 }
 
 .arrow-up {

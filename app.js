@@ -55,7 +55,9 @@ const eventSpeakers = [
   },
 ];
 
-eventSpeakers.forEach(({ img, fullName, position, contributions }) => {
+eventSpeakers.forEach(({
+  img, fullName, position, contributions,
+}) => {
   const element = document.createElement('div');
   const attr = document.createAttribute('class');
   attr.value = 'the-speakers';
@@ -114,7 +116,9 @@ const eventSpeakers2 = [
   },
 ];
 
-eventSpeakers2.forEach(({ img, fullName, position, contributions }) => {
+eventSpeakers2.forEach(({
+  img, fullName, position, contributions,
+}) => {
   const element = document.createElement('div');
   const attr = document.createAttribute('class');
   attr.value = 'the-speakers2';
@@ -153,7 +157,6 @@ const showMore = `
 const dropDown = document.querySelector('.drop-down');
 dropDown.addEventListener('click', () => {
   specialSpeakers.classList.toggle('show');
-  console.log(specialSpeakers);
 
   if (specialSpeakers.classList.contains('show')) {
     dropDown.innerHTML = showLess;
