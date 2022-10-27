@@ -427,6 +427,7 @@ a {
 
 .show {
   display: grid;
+  margin-top: 0;
 }
 
 .arrow-up {
@@ -457,6 +458,35 @@ a {
   margin-bottom: 10px;
 }
 
+.name {
+  font-family: var(--font2);
+  color: var(--text-color1);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.positionA {
+  color: #ef513c;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.positionA::after {
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 85px;
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  background-color: var(--text-color1);
+}
+
 .position {
   color: #ef513c;
   font-family: 'Lato', sans-serif;
@@ -471,7 +501,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 80px;
+  top: 60px;
   width: 40px;
   height: 1px;
   position: absolute;
@@ -582,7 +612,6 @@ a {
   font-weight: 700;
   color: var(--text-color1);
 }
-
 
 /* desktop version */
 
