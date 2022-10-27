@@ -58,6 +58,7 @@ a {
   display: none;
   background-color: #fff;
   height: 11vh;
+  width: 100vw;
   padding: 10px 150px 20px 30px;
   box-shadow: 0 0 10px 0 #3e3e3e8f;
   position: fixed;
